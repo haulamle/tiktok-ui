@@ -5,6 +5,7 @@ import Following from '~/pages/Following';
 import Profile from '~/pages/Profile';
 import Upload from '~/pages/Upload';
 import Search from '~/pages/Search';
+import Admin from '~/pages/Admin';
 
 const publicRoutes = [
     { path: '/', component: Home },
@@ -12,6 +13,7 @@ const publicRoutes = [
     { path: '/profile', component: Profile },
     { path: '/upload', component: Upload, layout: HeaderOnly },
     { path: '/search', component: Search, layout: null },
+    { path: '/admin', component: Admin, layout: null },
 ];
 
 const privateRoutes = [];
