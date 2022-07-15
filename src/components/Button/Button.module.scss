@@ -27,6 +27,12 @@
 .title + .icon {
     margin-left: 8px;
 }
+
+.icon {
+    display: block;
+    width: 20px;
+    text-align: center;
+}
 //Button types
 .rounded {
     border-color: rgba(22, 24, 35, 0.12);
