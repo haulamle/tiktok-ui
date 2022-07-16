@@ -11,7 +11,6 @@ import {
     faGear,
     faKeyboard,
     faMagnifyingGlass,
-    faMessage,
     faSignIn,
     faSignOut,
     faSpinner,
@@ -154,7 +153,7 @@ function Header() {
                             <img
                                 src="https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-giso/3c0d2a9d375e4a8523005edf7f275242~c5_100x100.jpeg?x-expires=1658131200&x-signature=KqJIrWiapjeDaCyL%2B%2FQ6sL5ttfg%3D"
                                 className={cx('user-avatar')}
-                                atl="Nguyen Van A"
+                                alt="Nguyen Van A"
                             />
                         ) : (
                             <button className={cx('more-btn')}>
