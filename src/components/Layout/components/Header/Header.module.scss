@@ -17,6 +17,7 @@
     height: 100%;
     width: var(--default-layout-width);
     justify-content: space-between;
+    padding: 0 var(--default-layout-horizontal-spacer);
 }
 
 .search,
@@ -99,4 +100,5 @@
     margin-left: 28px;
     padding: 4px 8px;
     background-color: transparent;
+    cursor: pointer;
 }
