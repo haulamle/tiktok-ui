@@ -110,6 +110,9 @@
 }
 
 .action-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 2.2rem;
     color: #161823;
     background-color: transparent;
