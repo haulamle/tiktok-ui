@@ -1,4 +1,5 @@
 import { HeaderOnly } from '~/components/Layout';
+import routes from '~/config/routes';
 
 import Home from '~/pages/Home';
 import Following from '~/pages/Following';
@@ -8,12 +9,12 @@ import Search from '~/pages/Search';
 import Admin from '~/pages/Admin';
 
 const publicRoutes = [
-    { path: '/', component: Home },
-    { path: '/following', component: Following },
-    { path: '/@:nickname', component: Profile },
-    { path: '/upload', component: Upload, layout: HeaderOnly },
-    { path: '/search', component: Search, layout: null },
-    { path: '/admin', component: Admin, layout: null },
+    { path: routes.home, component: Home },
+    { path: routes.following, component: Following },
+    { path: routes.profile, component: Profile },
+    { path: routes.upload, component: Upload, layout: HeaderOnly },
+    { path: routes.search, component: Search, layout: null },
+    { path: routes.admin, component: Admin, layout: null },
 ];
 
 const privateRoutes = [];

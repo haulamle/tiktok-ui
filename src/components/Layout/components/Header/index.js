@@ -12,6 +12,7 @@ import {
     faUser,
 } from '@fortawesome/free-solid-svg-icons';
 
+import { Link } from 'react-router-dom';
 import Button from '~/components/Button';
 import images from '~/assets/images';
 import styles from './Header.module.scss';
@@ -23,6 +24,7 @@ import Menu from '~/components/Poper/Menu';
 import Image from '~/components/Image';
 import { InboxIcon, MessageIcon, UploadIcon } from '~/components/Icons';
 import Search from '../Search';
+import routes from '~/config/routes';
 
 const cx = classNames.bind(styles);
 
@@ -90,7 +92,9 @@ function Header() {
     return (
         <header className={cx('wrapper')}>
             <div className={cx('inner')}>
-                <img src={images.logo} alt="tiktok" />
+                <Link to={routes.home} className={cx('logo')}>
+                    <img src={images.logo} alt="tiktok" />
+                </Link>
 
                 <Search />
 
